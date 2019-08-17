@@ -14,7 +14,12 @@
     g(`test page location`, `file:///${dir()}/generic-page.html`);
 }
 
-open browser
+open chrome       #mac #windows $
+open firefox      #mac #windows $
+open safari       #mac $
+open ie           #windows
+open edge         #windows
+
     init
         navigate to {test page location}
 

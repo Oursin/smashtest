@@ -1,4 +1,8 @@
-open browser
+open chrome $
+open firefox $
+open safari $
+open ie
+open edge
 
     open test page + [
 

@@ -886,13 +886,11 @@ Open test page [
 
                                 - exists
 
-                                    If browser isn't safari  // safari orders windows differently
-
-                                        Switch to the '2nd' window
-                                            {url} is current url
-                                                Verify {
-                                                    expect(url).to.contain('www.google.com');
-                                                }
+                                    Switch to the '2nd' window
+                                        {url} is current url
+                                            Verify {
+                                                expect(url).to.contain('www.google.com');
+                                            }
 
                                 - doesn't exist
 

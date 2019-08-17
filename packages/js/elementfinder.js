@@ -995,15 +995,14 @@ class ElementFinder {
                 function(elems, input) {
                     return elems.filter(function(elem) {
                         let tagName = elem.tagName.toLowerCase();
-                        return (tagName == 'a' ||
+                        return tagName == 'a' ||
                             tagName == 'button' ||
                             tagName == 'label' ||
                             tagName == 'input' ||
                             tagName == 'textarea' ||
                             tagName == 'select' ||
                             tagName == 'option' ||
-                            window.getComputedStyle(elem).getPropertyValue('cursor') == 'pointer')
-                            && !elem.disabled;
+                            window.getComputedStyle(elem).getPropertyValue('cursor') == 'pointer';
                             // TODO: handle cursor:pointer when hovered over
                     });
                 }
